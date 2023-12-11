@@ -18,7 +18,7 @@ jobs:
         id: hello-world
         uses: ./hello-world-docker-action
         with:
-          who-to-greet: 'Jakob!'
+          who-to-greet: Jakob
 
       - name: Output time set in the container
         run: echo "The time was ${{ steps.hello-world.outcome.time }} when the action said hello"
